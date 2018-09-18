@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@+id/toolbar_lay" layout="@layout/toolbar"/>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/toolbar_lay"
+        app:menu="@menu/players_menu"
+        app:itemBackground="@android:color/white"
+        app:itemIconTint="@color/nav_item_state_list" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_below="@id/navigation"
+            android:id="@+id/swipeToRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_meydan_okuma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ImageView
+        android:id="@+id/img_bos_icerik"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/bosicerik"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_bos_icerik"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/img_bos_icerik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorwhite"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+</RelativeLayout>

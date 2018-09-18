@@ -1,0 +1,66 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="tabTextAppearance">@style/MyCustomTabText</item>
+        <item name="tabSelectedTextColor">@color/colorwhite</item>
+        <item name="tabIndicatorColor">@color/colorAccent</item>
+    </style>
+
+    <style name="MyCustomTabText" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#E0E0E0</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="MenuItemTextAppearance">
+        <item name="android:textColor">@color/colorwhite</item>
+        // replace this value with your desired menu item color.
+    </style>
+
+    <style name="NavigationTheme" parent="AppTheme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginBottom">02dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:itemPadding">150dp</item>
+
+    </style>
+
+    <style name="TransparentToolbar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <!-- Support Library compability -->
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="login_tab_text_style">
+        <item name="android:textColor">@drawable/selector_login_tab_text</item>
+    </style>
+    <style name="text_bold_style">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="NavigationBottomStyle">
+        <item name="android:background">@color/colorwhite</item>
+        <!-- text size in menu-->
+    </style>
+
+    <style name="ThemeFullscreen" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

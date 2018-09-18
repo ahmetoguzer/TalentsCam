@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<TextView-->
+        <!--android:id="@+id/tvtitle"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="En iyiler"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textSize="20sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginTop="5dp"/>-->
+    <include android:id="@+id/toolbar_lay" layout="@layout/toolbar"
+        android:visibility="gone"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/toolbar_lay"
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:clipToPadding="false"
+        android:paddingLeft="10dp"
+        android:background="@android:color/white"
+        android:paddingBottom="10dp"
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+       >
+    </android.support.v7.widget.RecyclerView>
+
+
+
+    <FrameLayout
+        android:layout_below="@+id/rv"
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigation"
+        android:animateLayoutChanges="true">
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_below="@+id/rv"
+        android:id="@+id/frame_layout_tutorials"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigation"
+        android:animateLayoutChanges="true"
+        android:visibility="gone">
+
+    </FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation_items"
+        app:itemBackground="@android:color/white"
+        />
+
+</RelativeLayout>

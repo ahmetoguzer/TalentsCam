@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_item0"
+        android:icon="@drawable/coinikontrue"
+        android:title=""
+
+        />
+    <item
+        android:id="@+id/action_item1"
+        android:icon="@drawable/videoikonfalse"
+        android:title=""
+
+        />
+    <item
+        android:id="@+id/action_item2"
+        android:icon="@drawable/legensiconfalse"
+        android:title="" />
+
+    <item
+        android:id="@+id/action_item3"
+        android:icon="@drawable/newsikonfalse"
+        android:title=""/>
+    <item
+        android:id="@+id/action_item4"
+        android:icon="@drawable/ayarlarikonfalse"
+        android:title=""/>
+</menu>

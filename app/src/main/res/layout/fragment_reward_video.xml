@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backikon"
+            android:layout_marginTop="10dp"
+            android:tint="@color/colorPrimaryDark"
+            android:background="@android:color/transparent"/>
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/legendsimage"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvSoru"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/remaining"
+                android:textColor="#192834"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/btnA"
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_orange_border"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="1 BC"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true">
+
+
+                    <Button
+                        android:id="@+id/btnB"
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/custom_orange_border"
+
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:text="1 BC"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:visibility="visible"
+                        android:layout_gravity="center"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/btnC"
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/custom_orange_border"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="1 BC"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true">
+
+
+                    <Button
+                        android:id="@+id/btnD"
+                        android:layout_width="120dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/custom_orange_border"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:text="1 BC"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:visibility="visible"
+                        android:layout_gravity="center"/>
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                >
+
+                <FrameLayout
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/btnJoker"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/guessback"
+                        android:backgroundTint="#0CF533"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:text="waiting"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        />
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:id="@+id/tvPoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/remaining"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="#192834"
+                    android:textStyle="bold"
+                    android:drawableTop="@drawable/coinikonfalse"
+                    android:drawablePadding="5dp"
+                     />
+
+                <FrameLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/btnSkip"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/guessback"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text=">>"
+                        android:textColor="#000000"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

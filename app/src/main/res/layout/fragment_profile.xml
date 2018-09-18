@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="#192834">
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backikon"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/profile"
+            android:textSize="25sp"
+            android:textColor="@color/colorwhite"/>
+
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:id="@+id/frame_meydan_okuma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/meydan_okuma_CircularProgressbar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cpb_background_progressbar_color="@color/circular_back"
+                app:cpb_background_progressbar_width="5dp"
+                app:cpb_progressbar_color="@color/circular_back"
+                app:cpb_progressbar_width="10dp"
+                android:layout_centerInParent="true"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/person_photo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:padding="2dp"
+                android:layout_marginBottom="5dp"
+                android:layout_centerInParent="true"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/person_photo"
+                android:id="@+id/person_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textStyle="normal"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <ImageView
+                android:id="@+id/img_plus_ikon"
+                android:layout_centerInParent="true"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:src="@drawable/morartikon"
+                android:visibility="visible"
+                android:clickable="true"/>
+
+        </RelativeLayout>
+    </FrameLayout>
+    <TextView
+        android:id="@+id/txt_profilname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        />
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/tv_deneme"
+            android:gravity="center"
+            android:text="@string/score"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_deneme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            android:layout_toRightOf="@+id/tv_deneme"
+            android:background="@drawable/custom_white_background"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/topicon"
+                android:tint="@color/colorwhite" />
+
+            <TextView
+                android:id="@+id/tv_puan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="2778"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/beyaz_zemin"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_name"
+            android:textColor="@color/login_edittext"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/et_kullanıcı_Adı"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:textColor="@color/item_text_color"
+            android:backgroundTint="@color/item_text_color"
+            android:background="@null"
+            android:inputType="text"
+            android:maxLines="1"
+            android:gravity="left|center"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:imeOptions="actionDone"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/settings_view_color"></View>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/age"
+            android:textColor="@color/login_edittext"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/et_yas"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:textColor="@color/item_text_color"
+            android:backgroundTint="@color/item_text_color"
+            android:background="@null"
+            android:inputType="text"
+            android:maxLines="1"
+            android:gravity="left|center"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:imeOptions="actionDone"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/settings_view_color"></View>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="left|center"
+                android:text="@string/gender"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/login_edittext"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/checkbox_erkek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20dp"
+                android:checked="false"
+                android:text="@string/male"
+                android:textColor="@color/login_edittext"
+                />
+
+            <CheckBox
+                android:id="@+id/checkbox_kadin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:checked="false"
+                android:text="@string/female"
+                android:textAlignment="textEnd"
+                android:textColor="@color/login_edittext" />
+        </RelativeLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/settings_view_color"></View>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail"
+            android:textColor="@color/login_edittext"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:textColor="@color/item_text_color"
+            android:backgroundTint="@color/item_text_color"
+            android:background="@null"
+            android:inputType="text"
+            android:maxLines="1"
+            android:gravity="left|center"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:imeOptions="actionDone"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/settings_view_color"></View>
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_orange_background"
+                android:gravity="center"
+                android:text="@string/update"
+                android:textColor="@android:color/white"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:layout_alignParentLeft="true"/>
+
+            <Button
+                android:id="@+id/btn_password_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="bottom|center"
+                android:text="@string/change_password"
+                android:textColor="@color/login_edittext"
+                android:layout_centerInParent="true"
+                android:textSize="10sp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

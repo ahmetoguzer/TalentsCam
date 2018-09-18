@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/beyaz_zemin"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:weightSum="7">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                    android:id="@+id/myCircularProgressbar"
+                    android:layout_width="50dp"
+                    android:layout_height="85dp"
+                    android:layout_centerInParent="true"
+                    app:cpb_background_progressbar_color="#FFCDD2"
+                    app:cpb_background_progressbar_width="5dp"
+                    app:cpb_progressbar_color="#F44336"
+                    app:cpb_progressbar_width="10dp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/my_photo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:padding="2dp"
+                    android:src="@drawable/defaultprofile" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/my_name"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Ahmet Oğuz Er"
+            android:textColor="@color/item_text_color"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="0.1"
+            android:background="#192834"></View>
+
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="10/7"
+            android:textColor="@color/item_text_color"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_toRightOf="@+id/layout_puan"
+            android:layout_weight="0.1"
+            android:background="#192834"></View>
+
+        <TextView
+            android:id="@+id/opponent_name"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Ahmet Oğuz Er"
+            android:textColor="@color/item_text_color"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            android:visibility="visible" />
+
+        <FrameLayout
+            android:id="@+id/frame_meydan_okuma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                    android:id="@+id/opponent_CircularProgressbar"
+                    android:layout_width="50dp"
+                    android:layout_height="85dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="visible"
+                    app:cpb_background_progressbar_color="#FFCDD2"
+                    app:cpb_background_progressbar_width="5dp"
+                    app:cpb_progressbar_color="#F44336"
+                    app:cpb_progressbar_width="10dp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/opponent_photo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="2dp"
+                    android:src="@drawable/defaultprofile"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

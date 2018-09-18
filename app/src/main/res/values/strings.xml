@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">Basketbul</string>
+    <string name="app_id">248034959009053</string>
+
+    <string name="app_short_name">VXG SDK Test</string>
+    <string name="app_about_title">About</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="select_video">Select Video</string>
+
+    <string name="selected_video_thumbnail">Selected Video\'s Thumbnail</string>
+
+    <string name="loading_str">Yükleniyor</string>
+    <string name="dropbox_acces_token">ya-ku9mSWUAAAAAAAAAAJmPKzhPgh6Wk2_c1hLWmYYT-Wgh4xyHgR1g2h5Qi6ZIq</string>
+
+    <string-array name="raking_state">
+        <item>Genel</item>
+        <item>Aylık</item>
+        <item>Grup</item>
+    </string-array>
+
+    <string-array name="raking_state_grup">
+        <item>Genel</item>
+        <item>Aylık</item>
+        <item>Genel</item>
+        <item>Grup</item>
+    </string-array>
+
+    <string-array name="Kullanıcı_tipi">
+        <item>Son Kullanıcı</item>
+        <item>Öğretmen</item>
+    </string-array>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <string name="nav_home">Meydan Okuma</string>
+    <string name="nav_photos">Karşılaşmalar</string>
+    <string name="nav_movies">Puan durumu</string>
+    <string name="nav_notifications">Profil</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_about_us">About Us</string>
+
+    <string-array name="nav_item_activity_titles">
+        <item>Meydan Oku</item>
+        <item>Karşılaşmalar</item>
+        <item>Puan Durumu</item>
+        <item>Profil</item>
+        <item>Settings</item>
+    </string-array>
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <string name="rationale_title">Permission required</string>
+    <string name="rationale_message">we need permission for read <b>contact</b> and find your <b>location</b></string>
+
+
+
+    <string name="dropbox_api_key">sxZIns8jgCgAAAAAAAABt9ZiPXdR8zILzsJR-EMdcI0lkV0GIaG2IvXdYq_wUHhM</string>
+
+
+    <string name="qrcode_text">Video Kaydına Başlamak İçin QR kodu SmartCam e Okutunuz</string>
+    <string name="recording_text">Çekim devam ediyor...</string>
+
+    <string name="control_connecting_internet">Lütfen telefonunuzun internete bağlı olup olmadığını kontrol edniz</string>
+    <string name="location_error">Konum bilgisine ulaşılamıyor.Lütfen konum ayarlarınızı kontrol ediniz</string>
+
+    <string name="loginuserhint">Kullanıcı Adı</string>
+    <string name="loginpasshint">Şifre</string>
+
+    <string name="login_button">Giriş</string>
+    <string name="login_Facebook">Facebook İle Giriş</string>
+    <string name="forgot_password">Şifremi unuttum</string>
+    <string name="btn_register">Üye ol</string>
+    <string name="btn_send">Gönder</string>
+
+    <string name="forgot_password_message">Şifrenizi yenilemek için gereken link aşağıya gireceğiniz mail adresine gönderilecektir.</string>
+
+    <string name="register_name">Ad Soyad</string>
+    <string name="age">Yaş</string>
+    <string name="gender">Cinsiyet</string>
+    <string name="male">erkek</string>
+    <string name="female">bayan</string>
+    <string name="generate">oluştur</string>
+
+    <string name="settings">Ayarlar</string>
+    <string name="score">Puan</string>
+
+    <string name="my_past">Karşılaşmalarım</string>
+    <string name="point_table">Puan Durumu</string>
+    <string name="profile">Profilim</string>
+    <string name="contry">Ülke Seçimi</string>
+    <string name="help">Yardım</string>
+    <string name="mypast">Geçmişim</string>
+    <string name="logout">Çıkış</string>
+
+    <string name="update">Güncelle</string>
+    <string name="change_password">Şifre Değişikliği</string>
+
+    <string name="present_password">Mevcut Şifre</string>
+    <string name="new_password">Yeni Şifre</string>
+    <string name="re_new_password">Yeni Şifre(Tekrar)</string>
+
+    <string name="general">Genel</string>
+    <string name="monthly">Aylık</string>
+    <string name="weekly">Haftalık</string>
+
+    <string name="total_score">Toplam Puan</string>
+    <string name="start">Başla</string>
+
+    <string name="video_record">Video  \n \u0020 Çek</string>
+    <string name="guess_it">Tahmin  \n \u0020  Et</string>
+    <string name="watch_gain">İzle&amp;  \n \u0020  Kazan</string>
+
+    <string name="remaining">Kalan</string>
+    <string name="coins">BC</string>
+    <string name="thanks">Teşekkürler</string>
+    <string name="thanks_info">Videonuz onaylandıktan sonra diğer kullanıcılar tarafından görülecektir</string>
+    <string name="record_video">Video Çekimi</string>
+    <string name="video_send_text">Video hazır haydi gönder!</string>
+    <string name="send">Gönder</string>
+    <string name="cancel">İptal</string>
+    <string name="english">İngilizce</string>
+    <string name="turkish">Türkçe</string>
+    <string name="lang">Dil Seçimi</string>
+    <string name="country">Ülke Seçimi</string>
+    <string name="guess_description">Lütfen video bitene kadar bekleyin...</string>
+
+</resources>

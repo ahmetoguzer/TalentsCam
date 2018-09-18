@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/layoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:weightSum="4">
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/backikon"
+            android:tint="#192834"/>
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/legendsimage"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/layoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvcontenttitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="3dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text=""
+                android:textColor="#192834"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <FrameLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/youtube_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                />
+
+            <TextView
+
+                android:id="@+id/tvcontentdetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#192834"
+                android:textSize="18sp"
+                android:textStyle="normal|italic" />
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            >
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/guess_description"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:visibility="visible"/>
+            <FrameLayout
+                android:layout_alignParentLeft="true"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true">
+                <ImageButton
+                    android:id="@+id/btnWrong"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:layout_weight="1"
+                    android:src="@drawable/wrong"
+                    android:background="@android:color/transparent"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/tvWrong"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/guessback"
+                    android:backgroundTint="#000000"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:text="1 BC"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:visibility="gone"
+                    android:layout_gravity="center"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true">
+                <ImageButton
+                    android:layout_weight="1"
+                    android:id="@+id/btnRight"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right"
+                    android:background="@android:color/transparent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/tvRight"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/guessback"
+                    android:backgroundTint="#000000"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:text="1 BC"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:visibility="gone"
+                    android:layout_gravity="center"/>
+
+            </FrameLayout>
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9612034478800875/3232625080">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

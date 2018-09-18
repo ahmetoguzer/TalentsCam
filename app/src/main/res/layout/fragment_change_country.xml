@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#192834">
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backikon"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/lang"
+            android:textSize="25sp"
+            android:textColor="@color/colorwhite"/>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<TextView-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/lang"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="20sp"-->
+            <!--android:textStyle="bold"/>-->
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:id="@+id/layout_puan_durumu_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_below="@+id/layout_title"
+            android:layout_alignParentStart="true">
+
+            <RadioGroup
+                android:id="@+id/RadioGroupTab_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+
+                <RadioButton
+                    android:id="@+id/tab1"
+                    style="@style/login_tab_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_login_tab_center"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:text="@string/turkish" />
+
+                <RadioButton
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    style="@style/login_tab_text_style"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_login_tab_center"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:text="@string/english"
+                    />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/country"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:padding="3dp"
+            android:background="@android:color/white">
+
+            <Spinner
+                android:id="@+id/spinner_country"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"></Spinner>
+
+            <TextView
+                android:id="@+id/tv_il"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:hint=""
+                android:padding="5dp"
+                android:textColorHint="@android:color/tertiary_text_dark"
+                android:textSize="17sp"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:id="@+id/btn_update"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_orange_background"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="@string/update"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

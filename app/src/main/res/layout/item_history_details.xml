@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="2dp"
+        >
+
+        <RelativeLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+
+                android:id="@+id/view_1"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/login_edittext"></View>
+
+            <LinearLayout
+                android:layout_toRightOf="@id/view_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:id="@+id/layout_puan"
+                android:gravity="center">
+
+
+
+                <TextView
+                    android:id="@+id/tv_shootingscore"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10/7"
+                    android:textColor="@color/item_text_color"
+                    android:textSize="13sp"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/img_result"
+                    android:layout_gravity="center"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/cekikon" />
+            </LinearLayout>
+
+            <View
+                android:layout_toRightOf="@+id/layout_puan"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/login_edittext"></View>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_toRightOf="@id/frame_meydan_okuma"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/person_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/item_text_color"
+            android:textStyle="normal"
+            android:textSize="13sp"
+            android:text="Ahmet Oğuz Er"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+
+        <FrameLayout
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:id="@+id/frame_meydan_okuma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/person_photo"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:padding="2dp"
+                    android:src="@drawable/defaultprofile"
+                    android:layout_centerInParent="true"
+                    />
+
+
+        </FrameLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/layoutMyPoints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="3dp"
+        android:weightSum="1"
+        android:background="#4c59d8"
+        android:layout_margin="8dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvPointName"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/coins"
+                android:textSize="20sp"
+                android:gravity="left|center"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/tvPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/coins"
+                android:textSize="20sp"
+                android:gravity="left|center"
+                android:paddingRight="5dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/image" />
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/coinikonfalse"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/remaining"
+                android:textSize="20sp"
+                android:gravity="left|center"
+                android:layout_centerInParent="true"
+                android:paddingLeft="40dp"
+                android:textColor="@android:color/white"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/tvPointDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textColor="@android:color/white"
+                android:text="@string/remaining"
+                android:textSize="20sp"
+                android:gravity="right|center"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:paddingRight="20dp"
+                android:textStyle="italic"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

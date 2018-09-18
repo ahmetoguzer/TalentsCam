@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/beyaz_zemin"
+       >
+
+        <FrameLayout
+            android:id="@+id/frame_meydan_okuma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                    android:id="@+id/meydan_okuma_CircularProgressbar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    app:cpb_background_progressbar_color="#FFCDD2"
+                    app:cpb_background_progressbar_width="5dp"
+                    app:cpb_progressbar_color="#F44336"
+                    app:cpb_progressbar_width="10dp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/person_photo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="5dp"
+                    android:padding="2dp" />
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/txt_meydann_okuma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/frame_meydan_okuma"
+            android:text="Ahmet oğuz er"
+            android:textColor="@color/login_edittext"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:id="@+id/txt_temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"/>
+
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Puan"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/login_edittext"/>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/custom_orange_border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+               >
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/fileikon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="2578"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/login_edittext"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>

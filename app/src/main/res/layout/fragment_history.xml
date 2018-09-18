@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#192834"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backikon"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/my_past"
+            android:textSize="25sp"
+            android:textColor="@color/colorwhite"/>
+
+
+    </RelativeLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_below="@id/layout_title"
+        android:layout_marginTop="10dp"
+        android:id="@+id/swipeToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_gecmisim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ImageView
+        android:id="@+id/img_bos_icerik"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/bosicerik"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_bos_icerik"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/img_bos_icerik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorwhite"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+
+
+
+</RelativeLayout>

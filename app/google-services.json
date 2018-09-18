@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "29644972774",
+    "firebase_url": "https://talentscam-e231c.firebaseio.com",
+    "project_id": "talentscam-e231c",
+    "storage_bucket": "talentscam-e231c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29644972774:android:8391ce2a3d747ef8",
+        "android_client_info": {
+          "package_name": "com.technoface.app.talentscam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29644972774-gm1o1oipvva9aslpt1qs0k8ip6njc6t9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.technoface.app.talentscam",
+            "certificate_hash": "f67adbc24e544ff376b38432749c798002a3e584"
+          }
+        },
+        {
+          "client_id": "29644972774-1g257jl5bt7mgabltghh2pmqrd22a1k8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNNWRHqjzwZAzpP7tZXNuVWKixbukK0Oo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29644972774-1g257jl5bt7mgabltghh2pmqrd22a1k8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

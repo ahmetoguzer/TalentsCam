@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<com.hookedonplay.decoviewlib.DecoView-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:id="@+id/dynamicArcViewDuello"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--app:dv_lineWidth="4dp"-->
+            <!--/>-->
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/karsilasma_CircularProgressbar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            app:cpb_background_progressbar_color="#FFCDD2"
+            app:cpb_background_progressbar_width="5dp"
+            app:cpb_progressbar_color="#F44336"
+            app:cpb_progressbar_width="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_duello"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_duello"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorwhite"
+            android:layout_marginTop="10dp"
+            android:textStyle="normal"
+            android:textSize="25sp"
+            android:gravity="center"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:id="@+id/img_karsilasma_result"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/won"/>
+
+            <TextView
+                android:id="@+id/txt_karsilasma_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kazandınız"
+                android:textSize="17sp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorwhite"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
